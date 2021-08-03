@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const path = require('path')
 const setupWebSocket = require('./websocket')
@@ -14,4 +15,4 @@ app.use('/', (req, res) => {
   res.render('index.html')
 })
 
-server.listen(process.env.PORT || 3000)
+server.listen(process.env.PORT)
