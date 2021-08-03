@@ -15,4 +15,6 @@ app.use('/', (req, res) => {
   res.render('index.html')
 })
 
-app.listen(process.env.PORT)
+app.listen(process.env.PORT, () => {
+  console.log("Server listening ...")
+})
