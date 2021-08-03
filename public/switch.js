@@ -13,8 +13,10 @@ function handleSwitch(cb) {
 function changeBg(state) {
   document.getElementById('toggleButton').checked = state;
   if (state) {
+    document.getElementById('message').style.color = "white"
     document.body.style.backgroundColor = "black";
   } else {
+    document.getElementById('message').style.color = "black"
     document.body.style.backgroundColor = "white";
   }
 }
