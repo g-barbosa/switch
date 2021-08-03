@@ -4,7 +4,7 @@ const path = require('path')
 const setupWebSocket = require('./websocket')
 const app = express();
 const server = require('http').createServer(app)
-setupWebSocket(server)
+// setupWebSocket(server)
 
 app.use(express.static(path.join(__dirname, 'public')))
 app.set('views', path.join(__dirname, 'public'))
