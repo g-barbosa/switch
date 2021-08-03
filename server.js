@@ -15,4 +15,4 @@ app.use('/', (req, res) => {
   res.render('index.html')
 })
 
-server.listen(process.env.PORT)
+app.listen(process.env.PORT)
