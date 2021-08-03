@@ -1,4 +1,4 @@
-var socket = io('http://localhost:3000')
+var socket = io('https://just-a-toggle-switch.herokuapp.com/')
 
 function changeState(state) {
   document.getElementById('toggleButton').checked = state;
