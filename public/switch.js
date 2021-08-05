@@ -13,11 +13,11 @@ function handleSwitch(cb) {
 function changeBg(state) {
   document.getElementById('toggleButton').checked = state;
   if (state) {
-    document.getElementById('message').style.color = "white"
-    document.body.style.backgroundColor = "black";
+    document.getElementById('message').style.cssText = "color: white; transition: all .4s;"
+    document.body.style.cssText = "background-color: black; transition: all .4s;";
   } else {
-    document.getElementById('message').style.color = "black"
-    document.body.style.backgroundColor = "white";
+    document.getElementById('message').style.cssText = "color: black; transition: all .4s;"
+    document.body.style.cssText = "background-color: white; transition: all .4s;";
   }
 }
 
